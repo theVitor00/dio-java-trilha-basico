@@ -18,5 +18,9 @@ public class Operadores {
         int divisao = 18 / 3;
         int modulo = 18 % 3;
         double resultado = (10 + 7) + (20 / 4.0);
+
+        // Exemplo de concatenação
+        String nomeCompleto = "LINGUAGEM" + " " + "JAVA";
+        System.out.print(nomeCompleto);
     }
 }
