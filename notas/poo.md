@@ -1,13 +1,13 @@
 # Conceitos de POO
 ___
 
-� medida que a tecnologia vem evoluindo, as linguagens de programa��o tambpem, e � esta transi��o natural que determina 
-quando estamos nos referindo a liguagem de baixo e alto n�vel.
+À medida que a tecnologia vem evoluindo, as linguagens de programação também, e a esta transição natural que determina 
+quando estamos nos referindo a liguagem de baixo e alto n�vel.
 
--**Baixo n�vel:** S�o linguagens que est�o mais pr�xima da interpreta��o da m�quina diante do algoritmo desenvolvido. Exemplo: 
+-**Baixo nível:** São linguagens que estão mais próxima da interpretação da máquina diante do algoritmo desenvolvido. Exemplo: 
 **Assembly** e **C**.
 
--**Alto n�vel:** S�o linguagem que disponibilizam uma proposta de sintaxe mais pr�xima de interpreta��o humana. Exemplo: 
+-**Alto nível:** São linguagens que disponibilizam uma proposta de sintaxe mais próxima de interpretação humana. Exemplo: 
 **Java**, **JavaScript**, **Python** e **C+**
 
 Exemplo simples de _Hello world_ em **Assembly** e em **Python**:
@@ -34,46 +34,168 @@ len equ $ - msg
 print("Hello, world!")
 ```
 
-## Programa��o Estruturada
+## Programação Estruturada
+___
 
-A **Programa��o Estruturada** � um paradigma de programa��o que visa melhorar a clareza, a qualidade e o tempo de desenvolvimento
-de um programa de computador, fazendo uso extensivo das constru��es de fluxo de controle estruturado de sele��o (if/then/else)
-e repeti��o (while/for), estruturas de bloco e subrotinas.
+A **Programação Estruturada** é um paradigma de programação que visa melhorar a clareza, a qualidade e o tempo de desenvolvimento
+de um programa de computador, fazendo uso extensivo das construções de fluxo de controle estruturado de seleção (if/then/else)
+e repetição (while/for), estruturas de bloco e subrotinas.
 
-O que devemos ter em mente � que na programa��o  estruturada, implementamos algoritmos com estruturas sequenciais denominados
-de procedimentos lineares. podendo afetar o valor das vari�veis de escopo local ou global em uma aplica��o.
+O que devemos ter em mente é que na programação  estruturada, implementamos algoritmos com estruturas sequenciais denominados
+de procedimentos lineares. podendo afetar o valor das variáveis de escopo local ou global em uma aplicação.
 
 
-## Programa��o Orientada a Objetos - POO
+## Programação Orientada a Objetos - POO
+___
 
-POO � um paradigma de programa��o baseado no conceito de _objetos_ que podem conter dados na forma de campos, tamb�m conhecidos
-como atributos, e c�digos na forma deprocedimentos, tamb�m conhecidos como m�todos.
+POO � um paradigma de programação baseado no conceito de _objetos_ que podem conter dados na forma de campos, também conhecidos
+como atributos, e códigos na forma deprocedimentos, também conhecidos como métodos.
 
-O que precisamos entender, � ue cada vez mais linguagens se adequam ao cen�rio real, proporcionando assim que o programador
-desenvolva algoritmos mais pr�ximos de fluxos comportamentais, logo, tudo ao nosso redor � representado como um Objeto.
+O que precisamos entender, é que cada vez mais linguagens se adequam ao cenário real, proporcionando assim que o programador
+desenvolva algoritmos mais próximos de fluxos comportamentais, logo, tudo ao nosso redor é representado como um Objeto.
 
-    Enquanto a programa��o estruturada � voltada a procedimentos e fun��es definidas pelo usu�rio,
-    a programa��o orientada a objetos � voltada a conceitos, como o de Classes e Objetos.
+    Enquanto a programação estruturada é voltada a procedimentos e funções definidas pelo usuário,
+    a programação orientada a objetos é voltada a conceitos, como o de Classes e Objetos.
 
 
 ## Classes
+___
 
-Toda estrutura de c�digo na linguagem Java � distribu�do em arquivos com extens�o *.java* denominados de **classes**. As
-classes existentes em nossos projetos ser�o compostas por: **identificador**, **caracter�sticas** e **comportamentos**.
-- **Classe** (class): A estrutura e ou representa��o que direciona a cria��o dos objetos de mesmo tipo;
-- **Identificador** (identity): Prop�sito existencial aos objetos que ser�o criados;
-- **Caracter�sticas** (states): Tamb�m conhecido como  **atributos** ou **propriedades**. � tpda informa��o que representa o estado do objeto;
-- **Comportamentos** (behavior): Tamb�m conhecido como **a��es** ou **m�todos**. � toda a parte comportamental que um objeto disp�e;
-- **Instanciar** (new): � o ato de criar um objeto � partir de uma estrutura definida em uma classe.
+Toda estrutura de código na linguagem Java é distribuído em arquivos com extensão *.java* denominados de **classes**. As
+classes existentes em nossos projetos serão compostas por: **identificador**, **características** e **comportamentos**.
+- **Classe** (class): A estrutura e ou representação que direciona a criação dos objetos de mesmo tipo;
+- **Identificador** (identity): Propósito existencial aos objetos que serão criados;
+- **Características** (states): Também conhecido como  **atributos** ou **propriedades**. é toda informação que representa o estado do objeto;
+- **Comportamentos** (behavior): Também conhecido como **ações** ou **métodos**. é toda a parte comportamental que um objeto dispõe;
+- **Instanciar** (new): é o ato de criar um objeto à partir de uma estrutura definida em uma classe.
 
 ![img_1.png](img_1.png)
 
 
-Seguindo algumas conve��es, as nossas classes s�o classificadas como:
-- **Classe de Modelo** (model): Classes que representem a estrutura de dom�nio da aplica��o, como por exemplo: Cliente, Pedido, NotaFiscal, etc.;
-- **Classe de Servi�o** (service): Ckasses que cont�m regras de neg�cio e valida��o de nosso sistema;
-- **Classe de Reposit�rio** (repository): Classes que cont�m uma integra��o com Banco de Dados;
-- **Classe de Controle** (controller): Classes que possuem a finalidade de disponibilar alguma comina��o externa para a nossa aplica��o, como _http_ _web_ e _webservices_;
-- **Classe Utilit�ria** (util): Classe que contem recursos comuns � toda nossas aplica��o.
+Seguindo algumas convenções, as nossas classes são classificadas como:
+- **Classe de Modelo** (model): Classes que representem a estrutura de domínio da aplicação, como por exemplo: Cliente, Pedido, NotaFiscal, etc.;
+- **Classe de Serviço** (service): Classes que contém regras de negócio e validação de nosso sistema;
+- **Classe de Repositório** (repository): Classes que contém uma integração com Banco de Dados;
+- **Classe de Controle** (controller): Classes que possuem a finalidade de disponibilar alguma comuninação externa para a nossa aplicação, como _http_ _web_ e _webservices_;
+- **Classe Utilitária** (util): Classe que contem recursos comuns à toda nossas aplicação.
 
 ![img_2.png](img_2.png)
+
+## Pacotes
+___
+
+A linguagem Java é composta por milhares de classess com as finalidades de, por exemplo: Classes de tipos de dados, representação
+de texto, números, datas, arquivos, diretórios, conexão com banco de dados, entre outras. Imagina atodas essas classes existirem
+em um único nível de documentos?  
+
+Para prevenir a desorganização, a linguagem dispõe de um recurso que organiza as classes padrões criadas por nós, que conhecemos
+como _packages_ (pacotes). Os pacotes são subdiretórios à partir da pasta *src* do nosso projeto, onde estão localizadas as 
+classes da linguagem e novas classes que forem criadas para o projeto. Existem algumas convenções par a criação de pacotes
+já utilizadas no mercado.
+
+![img_3.png](img_3.png)
+
+
+### Nomeclatura
+
+Vamos imaginar que a sua empresa se chama **Power Soft**. e ela está desenvolvendo software comercial, governamental e um software
+livre ou de código aberto. Abaixo teríamos os pacotes sugeridos conforme a tabela abaixo:
+
+| Tipo          | Pacote          |
+|---------------|-----------------| 
+| **Comercial** | _com.powersoft_ |
+| **Governamental** | _gov.powersoft_ |
+| **Código aberto** | _org.powersoft_ |
+
+Bem, acimajá pudemos observar que existe uma definição para o uso do nome dos pacotes, porém podemos organizar ainda mais um
+pouco as nossas classes mediante a proposta de sua existência:
+- **model**: Classes que representam a camada e modelo da aplicação: Cliente, Pedido, NotaFiscal, Usuario;
+- **repository**: Classes ou interfaces que possuem a finalidade de interagir com tabelas no banco de dados: ClienteRepository;
+- **service**: Classes que contém as regras de negócio do sistema: ClienteService possui o método validar o CPF do cliente cadastrado;
+- **controller**: Classes que possuem a finalidade de si´ponibilizar os nossos recursos da aplicação para outras aplicações via padrão HTTP;
+- **view**: Classes que possuem altuma interação com a interface gráfica acessada pelo usuário;
+- **util**: Pacote que contém classes utilitárias do sistema: FormatadorNumeroUtil, ValidadorUtil.
+
+
+### Identificação
+
+Uma das características de uma classe é a sua identificação: Cliente, NotaFiscal, TituloPagar... Porém quando esta classe é 
+organizada por pacotes, ela passa a ter duas identificações: O nome simples, e agora o nome qualificado (**endereçamento do pacote + nome**).
+Por exemplo, considere a classe __Usuario__, que está endereçada no pacote __com.controle.acesso.model__, o nome qualificado
+desta classe é __com.controle.acesso.model.Usuario__.
+
+
+### Package _versus_ Import
+
+A localização de uma classe é definida pela palavra reservada _package_, logo, uma classe só contém uma definição de package
+no arquivo, sempre na primeira linha do código. Para a utilização de uma classe existente em outros pacotes, necessitamos realizar a importação
+das mesmas, seguindo as recomendações abaixo:
+
+```
+package
+
+import...
+import...
+
+public class MinhaClasse {
+}
+```
+
+### Por que é tão impoortante compreender os pacotes?
+
+A linguagem Java é composta por milhares de classes internas, classes desenvolvidas em projetos disponíveis através de bibliotecas,
+alpem das classes do próprio projeto. Logo, existe uma enorme prossibilidade da existência de classes de mesmo nome.
+É nesta hora que nós desenvolvedores precisamos detectar qual classe iremos importar em nosso projeto.
+
+Um exemplo clássico é a existencia das classes *java.sql.Date* e *java.util.Date* da própria linguagem.
+
+
+## Visibilidade dos Recursos
+___
+
+Em Java, utilizamos três palavras reservadas e um conceito default (sem nenhuma palavra reservada) para definir os quatro tipos
+de visibilidade de atributos, métodos e até mesmo classes no que se refere ao acesso por outras classes. Iremos ilustrar do 
+mais restrito tipo de visibilidade nos arquivos em nosso projeto.
+Para melhor ilustrar, iremos representar os conceitos de visibiçidade de recursos através do contexto de uma lanchonete que
+vende lanche natural e suco.
+
+### Modificador public
+
+Como o próprio nome representa, quando nossa classe, método e atributo é definido como **public**, qualquer outra classe em 
+qualquer outro pacote pode visualizar tais recursos.
+
+![img_4.png](img_4.png)
+
+### Modificador default
+
+O modificador default está fortemente associado à organização de classes por pacotes. Algumas implementações não precisam estar
+disponíveis por todo o projeto, e este modificador de acesso restringe a visibilade por outros pacotes.
+
+![img_5.png](img_5.png)
+
+### Modificador private
+
+O modificador private garante que os métodos e aributos estejam visíveis e acessíveis **somente dentro da própria classe**
+onde o mesmo é declarado.
+
+    A visibilidade de recursos dalinguagem nã está associada à **interface gráfica**, mas sim ao que as classes conseguem 
+    acessar uma das outras
+
+
+## Getters e Setters
+___
+
+Segundo a convenção Java Beans, os métodos *Getters* e *Setters* são utilizados para buscar valores de atributos ou definir novos
+valores de instâncias de classes.
+- O método **Getter** retorna o valor do atributo especificado;
+- O método **Setter** define um novo valor para o atributo especificado;
+- Os atributos precisam ter o modificador de acesso **private**;
+- Como agora os atributos estão somente visíveis a nível de classe, precisaremos criar métodos **getX()** e **setX()**, como por exemplo: getNome() e setNome();
+- O método **get** é responsável por obter o valor atual do atributo, logo ele precisa ser **public** e retornar um tipo correspondente ao valor. Exemplo: **__public String getNome(){}__**;
+- O método **set** é responsável por definir ou modificar o valor de um atributo em um objeto, logo ele também precisa ser **public**, receber um árâmetro do mesmo tipo da variável, mas não retorna valor nenhum. Exemplo: **__public void setNome(String newNome)__**;
+
+
+## Construtores
+___
+
+
