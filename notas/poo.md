@@ -198,4 +198,36 @@ valores de instâncias de classes.
 ## Construtores
 ___
 
+Sabemos que para criar um objeto na linguagem Java, utilizamos a seguinte estrutura de código:
+    
+    Classe novoObjeto = new Classe();
+
+Desta forma será criado um novo objeto na memória. Este recurso também é conhecido como instanciar um novo objeto.
+
+É uma boa pática de programação criar construtores utilizando somente atributos necessários para a existencia  da classe, 
+e todos os demais devem ser definidos através de métodos setters. Vale mencionar que em determinadas ocasiões, é possível 
+adicionar um construtor que não recebe atributos, ou recebe apenas atributos específicos.
+
+
+## Enums
+___
+
+Enum é um tipo especial de classe onde os objetos são previamente criados, imutáveis e disponiveis por toda a aplicação.
+
+Usamos Enum quando o nosso modelo de negócio contém objetos de mesmo contexto que já exitem previamente com a certeza de 
+não haver tanta alteração de valores.
+
+Exemplos:
+
+**Grau de Escolaridade:** Analfabeto, Fundamental, Médio, Superior;
+
+**Estado Civil:** Solteiro, Casado, Divorciado, Viúvo;
+
+**Estados Brasileiros:** São Paulo, Rio de Janeiro, Piauí, Maranhão, etc.;
+
+    Não confunda uma lista de constantes com enum.
+
+Enquanto uma constante é uma variável de tipo com valor imutável, **enum** é um conjunto de objetos pré-estabelecidos na aplicação.
+
+Como um **enum** é um conjunto de objetos, logo estes objetos podem conter atributos e métodos.
 
