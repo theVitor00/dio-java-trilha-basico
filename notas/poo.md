@@ -231,3 +231,69 @@ Enquanto uma constante é uma variável de tipo com valor imutável, **enum** é
 
 Como um **enum** é um conjunto de objetos, logo estes objetos podem conter atributos e métodos.
 
+
+## Pilares do POO
+___
+
+**Programação Orientada a Objetos** (POO ou OOP) é um paradigma de programção baseado no conceito  de objetos, que podem 
+conter *dados na forma de campos*, também conhecidos como atributos e códigos, ou na forma de *procedimentos*, também conhecidos
+como métodos.
+
+Como se trata de um  contexto análogo ao mundo real, tudo no qal nos referimos são objetos, como por exemplo: uma conta 
+bancária, alunos, veículo, transferência, etc.
+
+A programação orientada a objetos é bem requisitada no contexto das aplicações mais atuais no mercado devido à possibilidade
+de reutilização de código e a capacidade de representação do sistema ser muito mais próxima do mundo real.
+
+Para uma linguagem ser considerada Orientada a Objetos, esta deve seguir o que denominamos como **Os quatro pilares da orientação a objetos:**
+- **Encapsulamento:** Nem tudo precisa estar visível. Grande parte do nosso algoritmo pode ser distribuído em métodos com finalidades específicas que complementam uma ação em nossas aplicação;
+- **Herança:** Características e comportamentos comuns podem ser elevados e compartilhados através de uma hierarquia de objetos. Ex: Um carro e uma motocicleta possuem propriedades como placa,chassi, ano de fabricação e métodos como acelerar e frear. Logo, para não ser um processo de codificação redundante, podemos desfrutar da herança criando uma classe **Veiculo**, para que seja herdada por **Carro** e **Motocicleta**;
+- **Abstração:** É a indisponibilidade para determinar a lógica de um ou vários comportamentos em um objeto. Ex: **Veiculo** determina duas ações, como *acelerar* e *frear*, logo, estes comportamentos deverão ser abstratos, pois existem mais de uma maneira de se realizar uma mesma operação. Ver *Polimorfismo*
+- **Polimorfismo:** São as inúmeras maneiras de se realizar uma mesma ação. Ex: Veículo determina duas ações como *acelerar* e *frear*. Primeiramente precisamos identificar se estaremos nos referindo a **Carro** ou **Motocicleta** para então determinar a lógica de aceleração e frenagem nos respectivos veículos.
+
+
+### Encapsulamento
+
+Nem tudo precisa estar disponível a todos. Processos utilizados apenas dentro da própria clásse, possuir visibilidade pública
+não é um requisito, então não há a necessidade desses dados estarem acessíveis. 
+
+Exemplo de diagrama UML de uma classe  Messenger: 
+
+![img_6.png](img_6.png)
+
+
+### Herança
+
+Herança é um princípio de orientação a objetos, que permite que classes compartilhem atributos e métodos, através de "heranças". ]
+Ela é usada na intenção de reaproveitar código ou comportamento generalizado ou especializar operações ou atributos.
+
+## Abstração
+
+A abstração na POO é a capacidade de ocultar detalhes irrelevantes ou complexos de um problema e focar nos aspectos essenciais.
+ Ela é implementada por meio de classes, que são modelos que descrevem os atributos e comportamentos comuns de um grupo de objetos.
+
+A abstração é um princípio fundamental da Programação Orientada a Objetos que envolve a identificação e a modelagem das
+características e comportamentos essenciais de um objeto, ignorando os detalhes irrelevantes ou secundários para o contexto 
+em questão. Em essência, a abstração permite aos desenvolvedores criar modelos simplificados de entidades complexas do mundo real,
+focando apenas nos aspectos que são importantes para a aplicação sendo desenvolvida.
+
+### Polimorfismo
+
+Um mesmo comportamento, de várias maneiras.
+
+Podemos observar no contexto de Abstração e Herança, que conseguimos criar uma singularidade estrutural de nossos elementos.
+Isso quer dizer que, qualquer classe que deseja representar um serviço de mensagens, basta estender a classe ServicoMensagemInstantanea
+e implementar, os respectivos métodos abstratos. O que vale reforçar aqui é, cada classe terá a mesma ação, executando 
+procedimentos de maneira especializada.
+
+![img_7.png](img_7.png)
+
+#### Modificador protected
+
+Vamos para uma retrospectiva, quanto ao requisito do nosso sistema de mensagens instantaneas desde a etapa de encapsulamento.
+
+O nosso requisito solicita que além de enviar e receber mensagens, precisamos validar se o aplicativo está conectado à internet e salvar
+o histórico de cada mensagem.
+
+Sabemos que cada aplicativo costuma salvar as mensagens em seusm respectivos servidores cloud. Mas e quanto à validar se está conectado 
+à internet? Não poderia ser um mexanismo comum a todos? Logo, qualquer classe filha poderia desfrutar desta funcionalidade através da herança.
